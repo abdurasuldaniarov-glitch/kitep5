@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Азатбек устаздын тайпасы</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f1f6f4;--card:#fff;--ink:#12332b;--mut:#5b7a72;--line:#dce8e4;--pri:#0f766e;--pri2:#134e4a;--gold:#d9a441;--ok:#15803d;--okb:#dcfce7;--bad:#b91c1c;--badb:#fee2e2;--sh:0 4px 18px rgba(15,70,60,.08)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a17;--card:#14262; --card:#152a25;--ink:#e6f2ee;--mut:#8fb0a6;--line:#24403a;--pri:#2dd4bf;--pri2:#042f2e;--okb:#14532d;--badb:#7f1d1d;--ok:#86efac;--bad:#fca5a5;--sh:none}}
+:root[data-theme="dark"]{--bg:#0d1a17;--card:#152a25;--ink:#e6f2ee;--mut:#8fb0a6;--line:#24403a;--pri:#2dd4bf;--pri2:#042f2e;--okb:#14532d;--badb:#7f1d1d;--ok:#86efac;--bad:#fca5a5;--sh:none}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{background:linear-gradient(135deg,#0f766e,#134e4a 70%);color:#fff;padding:18px 16px;position:relative;overflow:hidden}
+header:after{content:"☪";position:absolute;right:-10px;top:-30px;font-size:150px;opacity:.07}
+.hw{max-width:1100px;margin:auto;display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;position:relative;z-index:1}
+.brand{display:flex;gap:12px;align-items:center}.logo{font-size:34px;background:rgba(255,255,255,.15);border-radius:14px;width:52px;height:52px;display:grid;place-items:center}
+h1{margin:0;font-size:clamp(20px,4.5vw,28px);line-height:1.2}header small{opacity:.85}
+.badge{background:rgba(255,255,255,.18);padding:6px 12px;border-radius:99px;font-size:14px;margin-right:8px}
+nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--line);box-shadow:var(--sh)}
+.nv{max-width:1100px;margin:auto;display:flex;gap:6px;overflow-x:auto;padding:8px 12px}
+.nv button{flex:none;border:0;background:none;color:var(--mut);padding:10px 14px;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap}
+.nv button.on{background:var(--pri);color:#fff}
+main{max-width:1100px;margin:auto;padding:16px 12px 60px}
+h2{margin:6px 0 14px;font-size:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--sh)}
+.stat .i{font-size:26px}.stat .v{font-size:30px;font-weight:800;line-height:1.1;margin-top:4px}.stat .l{color:var(--mut);font-size:14px}
+.stat.ok .v{color:var(--ok)}.stat.bad .v{color:var(--bad)}.stat.gold{border-color:var(--gold)}
+.tw{overflow-x:auto;border-radius:16px;border:1px solid var(--line);background:var(--card);box-shadow:var(--sh)}
+table{width:100%;border-collapse:collapse;min-width:520px}
+th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:rgba(15,118,110,.08);font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+tr:last-child td{border-bottom:0}td.c,th.c{text-align:center}
+.btn{border:0;background:var(--pri);color:#fff;padding:12px 18px;border-radius:12px;font-size:15px;font-weight:700;cursor:pointer;min-height:44px}
+.btn:hover{filter:brightness(1.08)}.btn.ghost{background:transparent;color:var(--pri);border:1.5px solid var(--pri)}
+.btn.sm{padding:8px 12px;min-height:38px;font-size:14px}.btn.red{background:var(--bad);color:#fff}
+header .btn{background:var(--gold);color:#3b2a00}
+.tag{display:inline-block;padding:5px 11px;border-radius:99px;font-size:14px;font-weight:700}
+.tag.ok{background:var(--okb);color:var(--ok)}.tag.bad{background:var(--badb);color:var(--bad)}.tag.no{background:var(--line);color:var(--mut)}
+.seg{display:flex;gap:6px}.seg button{border:1.5px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 12px;font-size:14px;font-weight:700;cursor:pointer;min-height:40px}
+.seg button.ok.on{background:var(--ok);border-color:var(--ok);color:#fff}.seg button.bad.on{background:var(--bad);border-color:var(--bad);color:#fff}
+.pb{width:46px;height:42px;border-radius:10px;border:1.5px solid var(--line);font-size:18px;background:var(--okb);cursor:default}
+.pb.x{background:var(--badb)}button.pb{cursor:pointer}
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:12px}
+.bar input[type=date],select,input,textarea{font:inherit;padding:11px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--card);color:var(--ink);width:100%}
+.bar input[type=date],.bar select{width:auto}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:4px 0 12px}
+.chip{flex:none;border:1.5px solid var(--line);background:var(--card);color:var(--ink);padding:8px 12px;border-radius:12px;cursor:pointer;font-size:13px;text-align:center}
+.chip b{display:block;font-size:14px}.chip.on{background:var(--pri);border-color:var(--pri);color:#fff}
+.dt{font-size:20px;font-weight:800;color:var(--pri)}.sp{flex:1}
+.empty{text-align:center;color:var(--mut);padding:30px}
+.ov{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;align-items:center;justify-content:center;padding:16px;z-index:20}
+.ov.open{display:flex}.md{background:var(--card);color:var(--ink);border-radius:20px;padding:22px;width:100%;max-width:440px;max-height:90vh;overflow:auto}
+.md h3{margin:0 0 12px}.md label{display:block;font-size:14px;color:var(--mut);margin:10px 0 4px}
+.act{display:flex;gap:8px;justify-content:flex-end;margin-top:18px}.err{color:var(--bad);font-size:14px;min-height:20px;margin:8px 0 0}
+.pct{height:10px;border-radius:9px;background:var(--badb);overflow:hidden;margin-top:8px}.pct i{display:block;height:100%;background:var(--ok)}
+.hint{color:var(--mut);font-size:14px;margin:8px 0}
+@media(max-width:560px){th,td{padding:10px 8px}.btn{padding:11px 14px}}
+</style>
+</head>
+<body>
+<header><div class="hw">
+  <div class="brand"><div class="logo">🕌</div><div><h1>Азатбек устаздын тайпасы</h1><small>Классты көзөмөлдөө системасы</small></div></div>
+  <div><span class="badge" id="mode"></span><button class="btn sm" id="authBtn"></button></div>
+</div></header>
+<nav><div class="nv" id="nav"></div></nav>
+<main id="view"></main>
+<div class="ov" id="modal"><form class="md" id="mf"><h3 id="mt"></h3><div id="mb"></div><p class="err" id="err"></p>
+<div class="act"><button type="button" class="btn ghost" data-a="close">Жабуу</button><button class="btn" id="mok">Сактоо</button></div></form></div>
+
+<script>
+const $=s=>document.querySelector(s);
+const M=['январь','февраль','март','апрель','май','июнь','июль','август','сентябрь','октябрь','ноябрь','декабрь'];
+const PR=['Багымдат','Бешим','Аср','Шам','Куптан'];
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pad=n=>String(n).padStart(2,'0');
+const iso=d=>d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate());
+const T=()=>iso(new Date());
+const fmt=s=>{const[y,m,d]=s.split('-');return `${+d}-${M[m-1]} ${y}-жыл`};
+const sh=s=>{const[,m,d]=s.split('-');return `${+d}-${M[m-1]}`};
+const addD=(s,n)=>{const d=new Date(s+'T00:00:00');d.setDate(d.getDate()+n);return iso(d)};
+const uid=()=>Math.random().toString(36).slice(2,9)+Date.now().toString(36);
+const K='azatbek_class_v1';
+let S=(()=>{try{const d=JSON.parse(localStorage.getItem(K));if(d&&d.students)return d}catch(e){}return{students:[],books:[],days:{},start:T(),auth:null}})();
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+let admin=false;try{admin=sessionStorage.getItem('adm')==='1'}catch(e){}
+let ui={tab:'home',date:T(),stu:null},okFn=null,lastDay=T();
+
+async function hash(p,salt){
+  if(window.crypto&&crypto.subtle){const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(salt+p));return[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}
+  let h=0;for(const c of salt+p)h=(h*31+c.charCodeAt(0))|0;return'f'+h;
+}
+const nm=s=>esc(s.last+' '+s.first+(s.father?' '+s.father:''));
+const rec=d=>S.days[d]||{hw:{},pr:{}};
+const ens=d=>{if(!S.days[d])S.days[d]={hw:{},pr:{}};if(d<S.start)S.start=d;return S.days[d]};
+const range=()=>{const a=[];let d=S.start;const t=T();while(d<=t){a.push(d);d=addD(d,1)}return a};
+const dn=d=>Math.round((Date.parse(d)-Date.parse(S.start))/864e5)+1;
+function stats(d){
+  const r=rec(d),n=S.students.length,st=S.students;
+  const sub=st.filter(s=>r.hw[s.id]===true).length;
+  const miss=st.filter(s=>(r.pr[s.id]||[]).length).length;
+  return{n,sub,not:n-sub,miss,full:n-miss,mt:st.reduce((a,s)=>a+(r.pr[s.id]||[]).length,0)};
+}
+const card=(i,l,v,c='')=>`<div class="card stat ${c}"><div class="i">${i}</div><div class="v">${v}</div><div class="l">${l}</div></div>`;
+const hwTag=v=>v===true?'<span class="tag ok">✅ Тапшырды</span>':v===false?'<span class="tag bad">❌ Тапшырган жок</span>':'<span class="tag no">➖ Белгиленген жок</span>';
+const empty=t=>`<div class="empty">${t}</div>`;
+const noStu='Азырынча окуучу кошула элек. "Окуучулар" бөлүмүнөн кошуңуз.';
+
+function dateBar(){
+  const d=ui.date,all=range();
+  const list=all.includes(d)?all:[...all,d].sort();
+  return `<div class="bar"><button class="btn sm ghost" data-a="step" data-id="-1">◀</button>
+  <input type="date" value="${d}" data-ch="date" aria-label="Күндү тандоо">
+  <button class="btn sm ghost" data-a="step" data-id="1">▶</button>
+  <button class="btn sm" data-a="today">Бүгүн</button></div>
+  <div class="dt">${fmt(d)}${d>=S.start?` <small style="color:var(--mut);font-size:15px">· ${dn(d)}-күн</small>`:''}</div>
+  <div class="chips">${list.slice(-60).map(x=>`<button class="chip ${x===d?'on':''}" data-a="day" data-id="${x}"><b>${dn(x)}-күн</b>${sh(x)}</button>`).join('')}</div>`;
+}
+
+const V={
+home(){
+  const t=T(),s=stats(t),r=rec(t);
+  return `<h2>📅 ${fmt(t)}</h2>
+  <div class="grid">
+  ${card('👨‍🎓','Окуучулардын саны',s.n)}
+  ${card('🗓','Бүгүнкү күн',`<span style="font-size:20px">${fmt(t)}</span>`)}
+  ${card('✅','Тапшырганы',s.sub,'ok')}
+  ${card('❌','Тапшырбаганы',s.not,'bad')}
+  ${card('🕌','Намазга толук түшкөндөр',s.full,'ok')}
+  ${card('⚠️','Намаздан калгандар',s.miss,'bad')}
+  ${card('🕋','Түшпөгөн намаздар',s.mt+' / '+s.n*5,'gold')}
+  ${card('📚','Китептердин саны',S.books.length)}
+  </div>
+  <h2>Бүгүнкү абал</h2>
+  ${S.students.length?`<div class="tw"><table><tr><th>№</th><th>Окуучунун аты-жөнү</th><th>Бүгүнкү тапшырма</th><th class="c">Намаз</th></tr>
+  ${S.students.map((x,i)=>`<tr><td>${i+1}</td><td><b>${nm(x)}</b></td><td>${hwTag(r.hw[x.id])}</td><td class="c"><b>${5-(r.pr[x.id]||[]).length}/5</b></td></tr>`).join('')}</table></div>`:empty(noStu)}`;
+},
+students(){
+  return `<div class="bar"><h2 style="margin:0">👨‍🎓 Окуучулар</h2><span class="sp"></span>${admin?'<button class="btn" data-a="addS">＋ Окуучу кошуу</button>':''}</div>
+  ${S.students.length?`<div class="tw"><table><tr><th>№</th><th>Аты-жөнү</th><th>Атасынын аты</th><th>Жеке эскертүү</th>${admin?'<th></th>':''}</tr>
+  ${S.students.map((x,i)=>`<tr><td>${i+1}</td><td><b>${esc(x.last)} ${esc(x.first)}</b></td><td>${esc(x.father)||'—'}</td><td>${esc(x.note)||'—'}</td>
+  ${admin?`<td style="white-space:nowrap"><button class="btn sm ghost" data-a="editS" data-id="${x.id}">✏️ Өзгөртүү</button> <button class="btn sm red" data-a="delS" data-id="${x.id}">🗑 Өчүрүү</button></td>`:''}</tr>`).join('')}</table></div>`:empty(noStu)}`;
+},
+hw(){
+  const r=rec(ui.date),s=stats(ui.date);
+  return `<h2>📝 Күнүмдүк тапшырма</h2>${dateBar()}
+  <div class="grid">${card('✅','Тапшырды',s.sub,'ok')}${card('❌','Тапшырган жок',s.not,'bad')}</div>
+  ${S.students.length?`<div class="tw"><table><tr><th>№</th><th>Окуучу</th><th>${admin?'Белгилөө':'Абалы'}</th></tr>
+  ${S.students.map((x,i)=>`<tr><td>${i+1}</td><td><b>${nm(x)}</b></td><td>${admin?
+  `<div class="seg"><button class="ok ${r.hw[x.id]===true?'on':''}" data-a="hw" data-id="${x.id}" data-v="1">✅ Тапшырды</button><button class="bad ${r.hw[x.id]===false?'on':''}" data-a="hw" data-id="${x.id}" data-v="0">❌ Тапшырган жок</button></div>`:hwTag(r.hw[x.id])}</td></tr>`).join('')}</table></div>`:empty(noStu)}`;
+},
+hist(){
+  if(!S.students.length)return`<h2>📊 Тапшырма тарыхы</h2>${empty(noStu)}`;
+  if(!S.students.find(x=>x.id===ui.stu))ui.stu=S.students[0].id;
+  const st=S.students.find(x=>x.id===ui.stu),days=range();
+  const sub=days.filter(d=>rec(d).hw[st.id]===true).length,not=days.length-sub,p=days.length?Math.round(sub/days.length*100):0;
+  return `<h2>📊 Тапшырма тарыхы</h2>
+  <div class="bar"><select data-ch="stu">${S.students.map(x=>`<option value="${x.id}" ${x.id===ui.stu?'selected':''}>${esc(x.last)} ${esc(x.first)}</option>`).join('')}</select></div>
+  <div class="grid">${card('✅','Канча күн тапшырды',sub,'ok')}${card('❌','Канча күн тапшырган жок',not,'bad')}
+  <div class="card stat gold"><div class="i">📈</div><div class="v">${p}%</div><div class="l">Тапшыруу көрсөткүчү</div><div class="pct"><i style="width:${p}%"></i></div></div></div>
+  <div class="tw"><table><tr><th>Күн</th><th>Дата</th><th>Абалы</th></tr>
+  ${days.map(d=>`<tr><td>${dn(d)}-күн</td><td>${sh(d)}</td><td>${hwTag(rec(d).hw[st.id])}</td></tr>`).join('')}</table></div>`;
+},
+pray(){
+  const r=rec(ui.date),s=stats(ui.date);
+  return `<h2>🕌 Беш маал намаз</h2>${dateBar()}
+  <p class="hint">Баары баштапкы абалда «түштү» деп эсептелет. ${admin?'Намазга түшпөгөнүн ❌ менен белгилеңиз.':''}</p>
+  <div class="grid">${card('🕌','Толук түшкөндөр',s.full,'ok')}${card('⚠️','Намаздан калгандар',s.miss,'bad')}</div>
+  ${S.students.length?`<div class="tw"><table><tr><th>Окуучу</th>${PR.map(p=>`<th class="c">${p}</th>`).join('')}<th class="c">Жалпы</th></tr>
+  ${S.students.map(x=>{const m=r.pr[x.id]||[];return`<tr><td><b>${nm(x)}</b></td>${PR.map((p,i)=>{const bad=m.includes(i);const c=`pb ${bad?'x':''}`,t=bad?'❌':'✅';return`<td class="c">${admin?`<button class="${c}" data-a="pr" data-id="${x.id}" data-i="${i}">${t}</button>`:`<span class="${c}" style="display:inline-block;line-height:42px">${t}</span>`}</td>`}).join('')}<td class="c"><b>${5-m.length}/5</b></td></tr>`}).join('')}</table></div>`:empty(noStu)}`;
+},
+books(){
+  return `<div class="bar"><h2 style="margin:0">📚 Китептер</h2><span class="sp"></span>${admin?'<button class="btn" data-a="addB">＋ Китеп кошуу</button>':''}</div>
+  ${S.books.length?`<div class="tw"><table><tr><th>№</th><th>Аталышы</th><th>Автору</th><th>Сабак</th><th>Эскертүү</th>${admin?'<th></th>':''}</tr>
+  ${S.books.map((b,i)=>`<tr><td>${i+1}</td><td><b>${esc(b.title)}</b></td><td>${esc(b.author)||'—'}</td><td>${esc(b.subject)||'—'}</td><td>${esc(b.note)||'—'}</td>
+  ${admin?`<td style="white-space:nowrap"><button class="btn sm ghost" data-a="editB" data-id="${b.id}">✏️ Өзгөртүү</button> <button class="btn sm red" data-a="delB" data-id="${b.id}">🗑 Өчүрүү</button></td>`:''}</tr>`).join('')}</table></div>`:empty('Китептер кошула элек.')}`;
+},
+set(){
+  return `<h2>⚙️ Жөндөөлөр</h2><div class="card"><h3 style="margin-top:0">🔐 Логин жана пароль</h3>
+  <p class="hint">Азыркы логин: <b>${esc(S.auth.login)}</b></p><button class="btn" data-a="pass">Паролду өзгөртүү</button></div>
+  <div class="card" style="margin-top:12px"><h3 style="margin-top:0">🗑 Маалыматты тазалоо</h3><p class="hint">Бардык окуучу, китеп жана белгилөөлөр өчөт.</p><button class="btn red" data-a="wipe">Баарын тазалоо</button></div>`;
+}};
+
+function render(){
+  $('#mode').textContent=admin?'⚙️ Администратор':'👁 Көрүү режими';
+  const b=$('#authBtn');b.textContent=admin?'Чыгуу':'🔑 Администратор кирүү';b.dataset.a=admin?'logout':'login';
+  const tabs=[['home','🏠','Башкы бет'],['students','👨‍🎓','Окуучулар'],['hw','📝','Тапшырма'],['hist','📊','Тарых'],['pray','🕌','Беш маал намаз'],['books','📚','Китептер']];
+  if(admin)tabs.push(['set','⚙️','Жөндөөлөр']);
+  if(!tabs.find(t=>t[0]===ui.tab))ui.tab='home';
+  $('#nav').innerHTML=tabs.map(t=>`<button class="${ui.tab===t[0]?'on':''}" data-a="tab" data-id="${t[0]}">${t[1]} ${t[2]}</button>`).join('');
+  $('#view').innerHTML=V[ui.tab]();
+}
+
+function modal(title,html,fn,label='Сактоо'){
+  $('#mt').textContent=title;$('#mb').innerHTML=html;$('#err').textContent='';$('#mok').textContent=label;okFn=fn;
+  $('#modal').classList.add('open');const f=$('#mb input,#mb textarea');if(f)setTimeout(()=>f.focus(),50);
+}
+const close=()=>$('#modal').classList.remove('open');
+const ask=(t,fn,l='Ооба')=>modal('Тастыктоо',`<p>${t}</p>`,()=>{fn()},l);
+const fld=(l,n,v='',req=false,type='text')=>`<label>${l}${req?' *':''}</label><input name="${n}" type="${type}" value="${esc(v)}" ${req?'required':''} autocomplete="off">`;
+
+$('#mf').addEventListener('submit',e=>{e.preventDefault();
+  Promise.resolve(okFn&&okFn(Object.fromEntries(new FormData(e.target)))).then(r=>{if(r!==false)close()});});
+
+const A={
+  tab:id=>{ui.tab=id;render()},
+  close,
+  step:id=>{ui.date=addD(ui.date,+id);render()},
+  today:()=>{ui.date=T();render()},
+  day:id=>{ui.date=id;render()},
+  login(){modal('Администратор кирүү',fld('Логин','l','',1)+fld('Пароль','p','',1,'password'),async d=>{
+    const h=await hash(d.p,S.auth.salt);
+    if(d.l.trim()===S.auth.login&&h===S.auth.hash){admin=true;try{sessionStorage.setItem('adm','1')}catch(e){}render();return true}
+    $('#err').textContent='Логин же пароль туура эмес';return false},'Кирүү')},
+  logout(){admin=false;try{sessionStorage.removeItem('adm')}catch(e){}render()},
+  hw(id,b){if(!admin)return;const r=ens(ui.date),v=b.dataset.v==='1';if(r.hw[id]===v)delete r.hw[id];else r.hw[id]=v;save();render()},
+  pr(id,b){if(!admin)return;const r=ens(ui.date),i=+b.dataset.i;let m=r.pr[id]||[];m=m.includes(i)?m.filter(x=>x!==i):[...m,i];if(m.length)r.pr[id]=m;else delete r.pr[id];save();render()},
+  addS(){A.formS()},editS(id){A.formS(S.students.find(x=>x.id===id))},
+  formS(s){if(!admin)return;const e=s||{};
+    modal(s?'Окуучуну өзгөртүү':'Жаңы окуучу',fld('Фамилиясы','last',e.last,1)+fld('Аты','first',e.first,1)+fld('Атасынын аты (милдеттүү эмес)','father',e.father)+'<label>Жеке эскертүү</label><textarea name="note" rows="3">'+esc(e.note)+'</textarea>',d=>{
+      const o={last:d.last.trim(),first:d.first.trim(),father:d.father.trim(),note:d.note.trim()};
+      if(s)Object.assign(s,o);else S.students.push({id:uid(),...o});save();render()})},
+  delS(id){if(!admin)return;const s=S.students.find(x=>x.id===id);ask(`«${esc(s.last+' '+s.first)}» окуучусун өчүрөсүзбү? Анын бардык тарыхы да өчөт.`,()=>{
+    S.students=S.students.filter(x=>x.id!==id);Object.values(S.days).forEach(r=>{delete r.hw[id];delete r.pr[id]});save();render()},'Өчүрүү')},
+  addB(){A.formB()},editB(id){A.formB(S.books.find(x=>x.id===id))},
+  formB(b){if(!admin)return;const e=b||{};
+    modal(b?'Китепти өзгөртүү':'Жаңы китеп',fld('Китептин аталышы','title',e.title,1)+fld('Автору','author',e.author)+fld('Кайсы сабакка тиешелүү','subject',e.subject)+'<label>Эскертүү</label><textarea name="note" rows="3">'+esc(e.note)+'</textarea>',d=>{
+      const o={title:d.title.trim(),author:d.author.trim(),subject:d.subject.trim(),note:d.note.trim()};
+      if(b)Object.assign(b,o);else S.books.push({id:uid(),...o});save();render()})},
+  delB(id){if(!admin)return;const b=S.books.find(x=>x.id===id);ask(`«${esc(b.title)}» китебин өчүрөсүзбү?`,()=>{S.books=S.books.filter(x=>x.id!==id);save();render()},'Өчүрүү')},
+  pass(){modal('Паролду өзгөртүү',fld('Азыркы пароль','o','',1,'password')+fld('Жаңы логин','l',S.auth.login,1)+fld('Жаңы пароль (кеминде 6 белги)','n','',1,'password')+fld('Жаңы паролду кайталаңыз','n2','',1,'password'),async d=>{
+    if(await hash(d.o,S.auth.salt)!==S.auth.hash){$('#err').textContent='Азыркы пароль туура эмес';return false}
+    if(d.n.length<6){$('#err').textContent='Пароль өтө кыска';return false}
+    if(d.n!==d.n2){$('#err').textContent='Паролдор дал келген жок';return false}
+    const salt=uid();S.auth={login:d.l.trim(),salt,hash:await hash(d.n,salt)};save();render()})},
+  wipe(){ask('Бардык маалымат биротоло өчөт. Улантасызбү?',()=>{S.students=[];S.books=[];S.days={};S.start=T();save();render()},'Баарын өчүрүү')}
+};
+document.addEventListener('click',e=>{
+  if(e.target.id==='modal'){close();return}
+  const b=e.target.closest('[data-a]');if(b&&A[b.dataset.a])A[b.dataset.a](b.dataset.id,b)});
+document.addEventListener('change',e=>{
+  const c=e.target.dataset.ch;if(!c)return;
+  if(c==='date'&&e.target.value){ui.date=e.target.value;render()}
+  if(c==='stu'){ui.stu=e.target.value;render()}});
+setInterval(()=>{if(T()!==lastDay){lastDay=T();render()}},60000);
+
+(async()=>{
+  if(!S.auth||!S.auth.hash){const salt=uid();S.auth={login:'admin',salt,hash:await hash('admin123',salt)}}
+  if(!S.start)S.start=T();
+  save();render();
+})();
+</script>
+</body>
+</html>
